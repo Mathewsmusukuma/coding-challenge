@@ -66,7 +66,7 @@ export default function  Home() {
     
   })
   const classes = useStyles();
-  const { data, loading } = useFetch('https://fakestoreapi.herokuapp.com/products?limit=10');
+  const { data, loading } = useFetch('https://fakestoreapi.com/products?limit=10');
   console.log(data);
   return (
     <Container maxWidth="sm">
@@ -81,7 +81,7 @@ export default function  Home() {
           <Grid container spacing={16}>
             <Grid item>
               <ButtonBase className={classes.image}>
-                <img className={classes.img} alt="complex" src={result.image.replace('https://fakestoreapi.com/', 'https://fakestoreapi.herokuapp.com/')} />
+                <img className={classes.img} alt="complex" src={result.image} />
               </ButtonBase>
             </Grid>
             <Grid item xs={12} sm container>
