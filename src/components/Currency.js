@@ -31,6 +31,7 @@ export default function CurrencySwich() {
       fetch(`https://api.exchangeratesapi.io/latest?base=${base_currency}`)
       .then(res => res.json())
       .then(json => localStorage.setItem('dollar', json.rates["USD"]));
+      window.location.reload();
   };
 
   const handleClose = () => {
