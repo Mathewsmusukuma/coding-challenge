@@ -96,7 +96,7 @@ export default function  Home() {
                 </Grid>
               </Grid>
               <Grid item>
-                <Typography variant="subtitle1">{ currency_symbol } { (result.price * currency).toFixed(2) }</Typography>
+                <Typography variant="subtitle1">Price { currency_symbol } { (result.price * currency).toFixed(2) }</Typography>
               </Grid>
             </Grid>
           </Grid>

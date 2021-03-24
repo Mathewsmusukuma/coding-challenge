@@ -70,10 +70,7 @@ export default function  Product() {
           </CardActionArea>
           <CardActions>
             <Button disabled size="small" color="primary">
-              {currency_symbol} { (data.price * currency).toFixed(2) }
-            </Button>
-            <Button size="small" color="primary">
-              Learn More
+              Price {currency_symbol} { (data.price * currency).toFixed(2) }
             </Button>
           </CardActions>
         </Card>
